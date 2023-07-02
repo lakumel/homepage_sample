@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/int1.css" type="text/css">
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <title>상품소개</title>
+    <script>
+//확대 축소
+$(document).ready(function(){
+             //JQuery 코드 블락
+                $("button.move").click(function(){
+                    $("img").animate({
+                        width : '300px',
+                        height : '300px',
+                        left : '300px'
+                    });
+                });
+
+                $("button.init").click(function(){
+                    $("img").animate({
+                        width : '130px',
+                        height : '100px',
+                        left : '0px'
+                    });
+                });
+
+
+        });
+
+    </script>
+
+    
+</head>
+<body>
+    <header>
+        <section id="top">
+            <a id="logo" href="index.html"><img src="img/logo.png" width ="200px",
+                height="100px"></a>
+                <div id="search">
+                    <div id="search_title">통합검색</div>
+                    <div id="search_form"><input type="text"></div>
+                    <div id="search_button"><img src="img/search2.png" width="30px", height="20px"></div>
+                </div>
+                <!-- 탑 메뉴 -->
+                <nav id="top_menu">
+                    <ul>
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav><!--top_menu-->
+                <div class="clear"></div>
+        </section>
+        <nav id="main_menu">
+            <ul>
+                <li><a href="#">분야보기</a>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">신상품</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">추천도서</a></li>
+                <li><a href="#">중고서점</a></li>
+                <li><a href="#">CD/BD</a></li>
+                <li><a href="#">문구</a></li>
+            </ul>    
+        </nav>
+    </header>
+ <!-- 메인:상품소개 -->
+<section id="main">
+    <section id="main1">
+        <section id="book_name">
+            <h3><span>처음 만나는 피그마 : </span>설계부터 협업까지 올인원 UX/UI 제작 툴</h3>
+            <section id="book_name1">
+                <div class="image">
+                    <img src="img/book1.jpg" width ="300px", height="400px"  style="position: relative">
+               
+                </div>
+            </section>
+        </section>
+    </section>
+    <!-- <div class="clear"></div> -->
+    <!-- 가격표시 -->
+    <section id="book_word">
+        <!-- <h3></h3> -->
+        <div class="book_price">
+            <ul>
+                <li>
+                    <div class="price1">정가</div>
+                    <div class="price2">25,000원</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">판매가</div>
+                    <div class="price2">22,500원</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">배송료</div>
+                    <div class="price2">무료</div>
+                    <div class="clear"></div>
+                </li>
+                    <li>
+                        <div class="price1">수량</div>
+                        <input type="number" placeholder="">
+                    </li>    
+            </ul>
+        </div>
+ <!--책가격-->
+            <div id="book_price2">
+            <ul>
+                <li>카드/간편결제 할인</li>
+                <li>무이자 할부</li>
+                <li>소득공제 1,020원</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <!-- 버튼박스 -->
+        <div id="button_box">
+            <div class="box1">
+                <a href="#"><button class="btn">바로구매</button></a>
+                <a href="#"><button class="btn">장바구니 담기</button></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <div class="clear"></div>
+    <!-- 상품소개 -->
+    <section id="book_int">
+        <h3>품목 종류</h3>
+        <div id="book_box1">
+            <ul>
+                <li>
+                    <div class="price1">발행일</div>
+                    <div class="price2">2020년 12월 18일</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">쪽수,무게,크기</div>
+                    <div class="price2">320쪽 | 172*225mm</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">ISBN13</div>
+                    <div class="price2">9788966262830</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">ISBN10</div>
+                    <div class="price2">896626283X</div>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 분류 -->
+    <section id="cat1">
+        <h3>카테고리 분류</h3>
+    <ul>
+        <li> 국내도서 > IT 모바일 > 웹사이트 > UI/UX</li>
+        <li> 국내도서 > IT 모바일 > 그래픽/디자인/멀티미디어 > 그래픽툴/저작툴 기타</li>
+    </ul>
+    </section>
+    <!-- 책소개 -->
+    <section id="int2">
+    <h3>책소개</h3>
+    <p>디자인 업계의 업무 프로세스는 애자일 형태로 진화했다. 그러면서 올인원 툴 피그마가 주목을 받게 된다. 피그마는 설계부터 디자인, 버전 관리까지 하나의 툴에서 모든 게 가능하다. 협업이 쉽고, 웹 기반이라 디자이너가 아닌 직군에서도 쉽게 접근할 수 있다.
+
+        이 책은 기존의 디자인 툴을 사용해 본 적이 없는 사람도 볼 수 있도록 기초부터 시작한다. 책의 예제를 직접 따라 하며 작은 프로젝트를 완성하는 방식으로 진행되기 때문에 지루하지 않게 피그마의 다양한 기능을 익힐 수 있다. 쿠킹 클래스, 쇼핑몰, 뉴스 앱 등 실무에서 활용할 수 있는 감각적인 예제를 사용했으며, 실습에 필요한 리소스는 모두 피그마 파일로 제공한다.</p>
+    </section>
+    </section>
+    <!-- 하단 영역 -->
+    <footer>
+        <section id="footer_menu_box">
+            <nav id="footer_menu">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">대량주문안내</a></li>
+                    <li><a href="#">광고안내</a></li>
+                    <li><a href="#">중고서점</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="footer_box">
+            <address>
+                <span>대표이사:홍길동</span>
+                <span>본사:서울시 종로구 종로</span>
+                <span>사업자 등록번호|102-22-456786</span><br>
+                <span>이메일:aaaaa@aaa.com</span>
+                <span>tel)02-***-****</span><br>
+                <span>communication,ALL Rights Reserved</span>
+            </address>
+            <section id="sns">
+                <span><a href="https://business.kakao.com/"><img src="img/kakao.png" width="30px" height="30px"></a></span>
+                <span><a href="https://www.instagram.com/"><img src="img/instar.png" width="30px" height="30px"></a></span>
+                <span><a href="https://twitter.com/"><img src="img/twitter.png" width="30px" height="30px"></a></span>
+                <span><a href="https://www.youtube.com/"><img src="img/youtube2.png" width="30px" height="30px"></a></span>
+            </section>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

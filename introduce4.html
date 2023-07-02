@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/introduce.css" type="text/css">
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <title>꿀벌의 예언1</title>
+    <script>
+//확대 축소
+$(document).ready(function(){
+             //JQuery 코드 블락
+                $("button.move").click(function(){
+                    $("img").animate({
+                        width : '300px',
+                        height : '300px',
+                        left : '300px'
+                    });
+                });
+
+                $("button.init").click(function(){
+                    $("img").animate({
+                        width : '130px',
+                        height : '100px',
+                        left : '0px'
+                    });
+                });
+
+
+        });
+
+    </script>
+
+    
+</head>
+<body>
+    <header>
+        <section id="top">
+            <a id="logo" href="index.html"><img src="img/logo.png" width ="200px",
+                height="100px"></a>
+                <div id="search">
+                    <div id="search_title">통합검색</div>
+                    <div id="search_form"><input type="text"></div>
+                    <div id="search_button"><img src="img/search2.png" width="30px", height="20px"></div>
+                </div>
+                <!-- 탑 메뉴 -->
+                <nav id="top_menu">
+                    <ul>
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav><!--top_menu-->
+                <div class="clear"></div>
+        </section>
+        <nav id="main_menu">
+            <ul>
+                <li><a href="#">분야보기</a>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">신상품</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">추천도서</a></li>
+                <li><a href="#">중고서점</a></li>
+                <li><a href="#">CD/BD</a></li>
+                <li><a href="#">문구</a></li>
+            </ul>    
+        </nav>
+    </header>
+ <!-- 메인:상품소개 -->
+<section id="main">
+    <section id="main1">
+        <section id="book_name">
+            <h3><span>꿀벌의 예언1</span></h3>
+            <section id="book_name1">
+                <div class="image">
+                    <img src="img/book4.jpg" width ="300px", height="400px"  style="position: relative">
+               
+                </div>
+            </section>
+        </section>
+    </section>
+    <!-- <div class="clear"></div> -->
+    <!-- 가격표시 -->
+    <section id="book_word">
+        <!-- <h3></h3> -->
+        <div class="book_price">
+            <ul>
+                <li>
+                    <div class="price1">정가</div>
+                    <div class="price2">16,800원</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">판매가</div>
+                    <div class="price2">15,120원</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">배송료</div>
+                    <div class="price2">무료</div>
+                    <div class="clear"></div>
+                </li>
+                    <li>
+                        <div class="price1">수량</div>
+                        <input type="number" placeholder="">
+                    </li>    
+            </ul>
+        </div>
+ <!--책가격-->
+            <div id="book_price2">
+            <ul>
+                <li>카드/간편결제 할인</li>
+                <li>무이자 할부</li>
+                <li>소득공제 1,020원</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <!-- 버튼박스 -->
+        <div id="button_box">
+            <div class="box1">
+                <a href="#"><button class="btn">바로구매</button></a>
+                <a href="#"><button class="btn">장바구니 담기</button></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <div class="clear"></div>
+    <!-- 상품소개 -->
+    <section id="book_int">
+        <h3>품목 종류</h3>
+        <div id="book_box1">
+            <ul>
+                <li>
+                    <div class="price1">발행일</div>
+                    <div class="price2">2023년 06월 20일</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">쪽수,무게,크기</div>
+                    <div class="price2">368쪽 | 426g | 120*210*30mm</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">ISBN13</div>
+                    <div class="price2">9788932923413</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">ISBN10</div>
+                    <div class="price2">8932923418</div>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 분류 -->
+    <section id="cat1">
+        <h3>카테고리 분류</h3>
+    <ul>
+        <li>국내도서 > 소설/시/희곡 > 장르소설 > SF</li>
+        <li> 국내도서 > 소설/시/희곡 > 프랑스소설</li>
+    </ul>
+    </section>
+    <!-- 책소개 -->
+    <section id="int2">
+    <h3>책소개</h3>
+    <p>
+        인류의 미래를 둘러싸고 펼쳐지는 대모험<br>
+        과학적 상상력과 역사적 사유가 만나 시작되는<br>
+        기상천외하고도 매혹적인 이야기!<br><br>
+        
+        전 세계 3천만 부, 한국어판 누계 3천 쇄를 돌파한 신화적 베스트셀러 작가 베르나르 베르베르의 신작 소설 『꿀벌의 예언』. 꿀벌이 사라지고 인류 멸종의 위기가 닥친 30년 뒤의 지구를 목격한 르네는 미래를 바꾸기 위해 시공간을 넘나드는 모험을 떠난다. 인류를 구할 방법이 적힌 고대의 예언서 「꿀벌의 예언」을 찾아 과거와 미래를 오가는 르네와 그 일행은 과연 예언서를 찾아 지구를 구할 수 있을까?<br>
+        
+        한국 독자들을 만난 지 30년이 되는 특별한 해에 펴내는 『꿀벌의 예언』은 그간 천재적 이야기꾼으로서 진화를 거듭해 온 베르베르의 여정이 고스란히 드러나는 독특한 작품이다. 특유의 독보적인 과학적 상상력에 과거와 미래를 성찰하는 역사적 사유 또한 더해, 한층 확장된 스케일의 색다른 재미를 느끼게 한다.<br>
+        
+        표지에도 30주년에 걸맞은 특별한 비밀이 숨겨져 있다. 앱을 통해 표지를 촬영하면 표지의 이미지가 움직이며 완성도 높은 모션 그래픽을 선보인다. 내용은 물론 디자인까지, 이번 소설은 오랜 팬은 물론, 처음으로 베르베르를 만날 독자들도 만족할 뜻깊은 30주년 선물이 될 것이다.<br></p>
+    </section>
+    </section>
+    <!-- 하단 영역 -->
+    <footer>
+        <section id="footer_menu_box">
+            <nav id="footer_menu">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">대량주문안내</a></li>
+                    <li><a href="#">광고안내</a></li>
+                    <li><a href="#">중고서점</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="footer_box">
+            <address>
+                <span>대표이사:홍길동</span>
+                <span>본사:서울시 종로구 종로</span>
+                <span>사업자 등록번호|102-22-456786</span><br>
+                <span>이메일:aaaaa@aaa.com</span>
+                <span>tel)02-***-****</span><br>
+                <span>communication,ALL Rights Reserved</span>
+            </address>
+            <section id="sns">
+                <span><a href="https://business.kakao.com/"><img src="img/kakao.png" width="30px" height="30px"></a></span>
+                <span><a href="https://www.instagram.com/"><img src="img/instar.png" width="30px" height="30px"></a></span>
+                <span><a href="https://twitter.com/"><img src="img/twitter.png" width="30px" height="30px"></a></span>
+                <span><a href="https://www.youtube.com/"><img src="img/youtube2.png" width="30px" height="30px"></a></span>
+            </section>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

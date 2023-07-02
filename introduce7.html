@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/introduce.css" type="text/css">
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <title>스파이더맨 : 월드 콜라이드</title>
+    <script>
+//확대 축소
+$(document).ready(function(){
+             //JQuery 코드 블락
+                $("button.move").click(function(){
+                    $("img").animate({
+                        width : '300px',
+                        height : '300px',
+                        left : '300px'
+                    });
+                });
+
+                $("button.init").click(function(){
+                    $("img").animate({
+                        width : '130px',
+                        height : '100px',
+                        left : '0px'
+                    });
+                });
+
+
+        });
+
+    </script>
+
+    
+</head>
+<body>
+    <header>
+        <section id="top">
+            <a id="logo" href="index.html"><img src="img/logo.png" width ="200px",
+                height="100px"></a>
+                <div id="search">
+                    <div id="search_title">통합검색</div>
+                    <div id="search_form"><input type="text"></div>
+                    <div id="search_button"><img src="img/search2.png" width="30px", height="20px"></div>
+                </div>
+                <!-- 탑 메뉴 -->
+                <nav id="top_menu">
+                    <ul>
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav><!--top_menu-->
+                <div class="clear"></div>
+        </section>
+        <nav id="main_menu">
+            <ul>
+                <li><a href="#">분야보기</a>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">신상품</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">추천도서</a></li>
+                <li><a href="#">중고서점</a></li>
+                <li><a href="#">CD/BD</a></li>
+                <li><a href="#">문구</a></li>
+            </ul>    
+        </nav>
+    </header>
+ <!-- 메인:상품소개 -->
+<section id="main">
+    <section id="main1">
+        <section id="book_name">
+            <h3><span>스파이더맨 : 월드 콜라이드</span>[컬러]</h3>
+            <section id="book_name1">
+                <div class="image">
+                    <img src="img/book7.jpg" width ="300px", height="400px"  style="position: relative">
+               
+                </div>
+            </section>
+        </section>
+    </section>
+    <!-- <div class="clear"></div> -->
+    <!-- 가격표시 -->
+    <section id="book_word">
+        <!-- <h3></h3> -->
+        <div class="book_price">
+            <ul>
+                <li>
+                    <div class="price1">정가</div>
+                    <div class="price2">20,000원</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">판매가</div>
+                    <div class="price2">18,000원</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">배송료</div>
+                    <div class="price2">무료</div>
+                    <div class="clear"></div>
+                </li>
+                    <li>
+                        <div class="price1">수량</div>
+                        <input type="number" placeholder="">
+                    </li>    
+            </ul>
+        </div>
+ <!--책가격-->
+            <div id="book_price2">
+            <ul>
+                <li>카드/간편결제 할인</li>
+                <li>무이자 할부</li>
+                <li>소득공제 1,020원</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <!-- 버튼박스 -->
+        <div id="button_box">
+            <div class="box1">
+                <a href="#"><button class="btn">바로구매</button></a>
+                <a href="#"><button class="btn">장바구니 담기</button></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <div class="clear"></div>
+    <!-- 상품소개 -->
+    <section id="book_int">
+        <h3>품목 종류</h3>
+        <div id="book_box1">
+            <ul>
+                <li>
+                    <div class="price1">발행일</div>
+                    <div class="price2">2023년 04월 26일</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">판형</div>
+                    <div class="price2">컬러</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">쪽수,무게,크기</div>
+                    <div class="price2">232쪽 | 167*257*20mm</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">ISBN13</div>
+                    <div class="price2">9791169257343</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">ISBN10</div>
+                    <div class="price2">1169257348</div>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 분류 -->
+    <section id="cat1">
+        <h3>카테고리 분류</h3>
+    <ul>
+        <li>국내도서 > 만화/라이트노벨 > 그래픽노블 > 마블 코믹스</li>
+    </ul>
+    </section>
+    <!-- 책소개 -->
+    <section id="int2">
+    <h3>책소개</h3>
+    <p>
+        <strong>“확실한 클래식!” - 코믹 북 리소시즈<br>
+            “모든 스파이더맨 팬들을 만족시켜 줄 작품.” - 제임스 헌트, 코믹 북 리소시즈<br><br>
+            
+            두 개의 유니버스가 처음으로 충돌한다!</strong><br><br>
+            
+            멀티버스의 벽이 깨지며 어딘지 모를 곳으로 넘어온 다정한 이웃 피터 파커, 그가 마침내 얼티밋 유니버스의 뉴 페이스 마일스 모랄레스를 만난다! 두 세계 거미 인간의 연합은 과연 숙적 미스테리오의 흉계를 막을 수 있을까? 마일스는 선배 스파이더맨 피터 파커와의 만남에서 무엇을 배우게 될까? 피터는 이웃 세계의 메이 숙모와 그웬 스테이시를 만나 무슨 얘기를 나눠야 할까? 비슷하지만 전혀 다른 세계, 또 다른 자신이 어릴 때 죽고 없는 세계에서의 강렬한 경험은 파커에게 어떤 의미로 다가올까?<br><br>
+            
+            <strong>마블 유니버스의 마일스 모랄레스는 누구인가?!</strong><br><br>
+            
+            어메이징한 피터 파커와 얼티밋 마일스 모랄레스의 첫 만남 이후 남은 수수께끼, 그것은 바로 마블 유니버스 마일스 모랄레스의 정체! 하지만 이 질문은 숨겨진 진실이라는 거대한 빙산의 일각에 불과했으니…. 점점 진실의 중심에 다가가는 두 스파이더맨 앞에 강적 태스크마스터가 등장하는데?!<br><br>
+            
+            브라이언 마이클 벤디스가 쓰고 사라 피첼리와 마크 배글리가 그린 궁극의 스파이더맨 모험극 「두 스파이더맨」(2012) #1-5, 「두 스파이더맨 II」(2017) #1-5 수록.<br><br>
+            
+            함께 읽으면 좋은 책<br>
+            『스파이더맨: 마일스 모랄레스는 누구인가?』<br>
+            『마블 나우! 어메이징 스파이더맨』(전 5권)<br>
+            『스파이더겟돈』<br>
+
+    </p>
+    </section>
+    </section>
+    <!-- 하단 영역 -->
+    <footer>
+        <section id="footer_menu_box">
+            <nav id="footer_menu">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">대량주문안내</a></li>
+                    <li><a href="#">광고안내</a></li>
+                    <li><a href="#">중고서점</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="footer_box">
+            <address>
+                <span>대표이사:홍길동</span>
+                <span>본사:서울시 종로구 종로</span>
+                <span>사업자 등록번호|102-22-456786</span><br>
+                <span>이메일:aaaaa@aaa.com</span>
+                <span>tel)02-***-****</span><br>
+                <span>communication,ALL Rights Reserved</span>
+            </address>
+            <section id="sns">
+                <span><a href="https://business.kakao.com/"><img src="img/kakao.png" width="30px" height="30px"></a></span>
+                <span><a href="https://www.instagram.com/"><img src="img/instar.png" width="30px" height="30px"></a></span>
+                <span><a href="https://twitter.com/"><img src="img/twitter.png" width="30px" height="30px"></a></span>
+                <span><a href="https://www.youtube.com/"><img src="img/youtube2.png" width="30px" height="30px"></a></span>
+            </section>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

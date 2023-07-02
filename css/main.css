@@ -1,0 +1,29 @@
+section#main{
+    width: 1300px;
+    margin: auto;
+}
+
+section#banner1{
+    float: inline;
+    margin-top: 15px;
+}
+
+
+/* 이달의 추천 도서 */
+section#new{
+    height: 800px;
+    margin-top: 200px;
+    /* border-top: 1px solid #007f96; */
+    font-size: 20px;
+}
+section#new h3{
+    margin: 20px 0 30px 50px;
+}
+section#new h3 span{
+
+}
+section#new .item{
+    float: left;
+    text-align: center;
+    margin: 0 0 0 100px;
+}

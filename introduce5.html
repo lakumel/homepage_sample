@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/int5.css" type="text/css">
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <title>최소한의 한국사</title>
+    <script>
+//확대 축소
+$(document).ready(function(){
+             //JQuery 코드 블락
+                $("button.move").click(function(){
+                    $("img").animate({
+                        width : '300px',
+                        height : '300px',
+                        left : '300px'
+                    });
+                });
+
+                $("button.init").click(function(){
+                    $("img").animate({
+                        width : '130px',
+                        height : '100px',
+                        left : '0px'
+                    });
+                });
+
+
+        });
+
+    </script>
+
+    
+</head>
+<body>
+    <header>
+        <section id="top">
+            <a id="logo" href="index.html"><img src="img/logo.png" width ="200px",
+                height="100px"></a>
+                <div id="search">
+                    <div id="search_title">통합검색</div>
+                    <div id="search_form"><input type="text"></div>
+                    <div id="search_button"><img src="img/search2.png" width="30px", height="20px"></div>
+                </div>
+                <!-- 탑 메뉴 -->
+                <nav id="top_menu">
+                    <ul>
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav><!--top_menu-->
+                <div class="clear"></div>
+        </section>
+        <nav id="main_menu">
+            <ul>
+                <li><a href="#">분야보기</a>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">신상품</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">추천도서</a></li>
+                <li><a href="#">중고서점</a></li>
+                <li><a href="#">CD/BD</a></li>
+                <li><a href="#">문구</a></li>
+            </ul>    
+        </nav>
+    </header>
+ <!-- 메인:상품소개 -->
+<section id="main">
+    <section id="main1">
+        <section id="book_name">
+            <h3><span>최소한의 한국사</span>-5천 년 역사가 단숨에 이해되는</h3>
+            <section id="book_name1">
+                <div class="image">
+                    <img src="img/book5.jpg" width ="300px", height="400px"  style="position: relative">
+               
+                </div>
+            </section>
+        </section>
+    </section>
+    <!-- <div class="clear"></div> -->
+    <!-- 가격표시 -->
+    <section id="book_word">
+        <!-- <h3></h3> -->
+        <div class="book_price">
+            <ul>
+                <li>
+                    <div class="price1">정가</div>
+                    <div class="price2">18,000원</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">판매가</div>
+                    <div class="price2">16,200원</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">배송료</div>
+                    <div class="price2">무료</div>
+                    <div class="clear"></div>
+                </li>
+                    <li>
+                        <div class="price1">수량</div>
+                        <input type="number" placeholder="">
+                    </li>    
+            </ul>
+        </div>
+ <!--책가격-->
+            <div id="book_price2">
+            <ul>
+                <li>카드/간편결제 할인</li>
+                <li>무이자 할부</li>
+                <li>소득공제 1,020원</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <!-- 버튼박스 -->
+        <div id="button_box">
+            <div class="box1">
+                <a href="#"><button class="btn">바로구매</button></a>
+                <a href="#"><button class="btn">장바구니 담기</button></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <div class="clear"></div>
+    <!-- 상품소개 -->
+    <section id="book_int">
+        <h3>품목 종류</h3>
+        <div id="book_box1">
+            <ul>
+                <li>
+                    <div class="price1">발행일</div>
+                    <div class="price2">2023년 06월 21일</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">쪽수,무게,크기</div>
+                    <div class="price2">352쪽 | 554g | 146*210*22mm</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">ISBN13</div>
+                    <div class="price2">9791198243430</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="price1">ISBN10</div>
+                    <div class="price2">1198243430</div>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 분류 -->
+    <section id="cat1">
+        <h3>카테고리 분류</h3>
+    <ul>
+        <li> 국내도서 > 역사 > 한국사/한국문화 > 한국사일반</li>
+    </ul>
+    </section>
+    <!-- 책소개 -->
+    <section id="int2">
+    <h3>책소개</h3>
+    <p>
+        <strong>단숨에 이해되는 한국사</strong><br><br>
+        <strong>대한민국 대표 역사 강사 최태성의
+            5천 년 역사가 단숨에 이해되는 핵심 한국사</strong><br><br>
+
+            ‘외워야 할 것 많고 어려운 한국사, 쉽고 빠르고 재미있게 핵심 내용만 알 수 없을까?’ 많은 사람이 역사 공부에 앞서 품는 이 질문에 답하기 위해 대한민국 대표 역사 강사 최태성이 나섰다. 한국사 교과서 저자이자 누적 수강생 600만 명에 이르는 한국사 1등 강사로서 복잡하고 어려운 말 없이 우리 역사에서 반드시 알아야 할 핵심 한국사를 엄선해 한 권에 담았다. 고조선이 건국된 기원전 2333년부터 6·15 남북공동선언이 발표된 2000년까지, 반만년 역사가 단숨에 이해되는 한국사 입문서 『최소한의 한국사』다.<br><br>
+
+            단 한 권으로 한국사의 맥락을 파악할 수 있도록 이 책은 중요한 사건, 인물, 문화유산을 두루 다루며 한국사의 주요 장면을 조명하고 역사의 큰 흐름을 잡는다. 시험에 나오기 때문에 중요한 이야기가 아니라 우리의 현재와 미래를 이해하기 위해 필요한 이야기를 담았기 때문에 교양으로서 역사를 공부하고 싶은 사람들에게 친절한 안내서가 되어줄 것이다. 이제 연도와 사건을 외워야 한다는 부담감은 내려놓고 재미와 의미로 가득한 5천 년 우리 역사를 이해하기 위한 최소한의 지식, 『최소한의 한국사』 속으로 떠나보자. <br>    
+    </p>
+    </section>
+    </section>
+    <!-- 하단 영역 -->
+    <footer>
+        <section id="footer_menu_box">
+            <nav id="footer_menu">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">대량주문안내</a></li>
+                    <li><a href="#">광고안내</a></li>
+                    <li><a href="#">중고서점</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="footer_box">
+            <address>
+                <span>대표이사:홍길동</span>
+                <span>본사:서울시 종로구 종로</span>
+                <span>사업자 등록번호|102-22-456786</span><br>
+                <span>이메일:aaaaa@aaa.com</span>
+                <span>tel)02-***-****</span><br>
+                <span>communication,ALL Rights Reserved</span>
+            </address>
+            <section id="sns">
+                <span><a href="https://business.kakao.com/"><img src="img/kakao.png" width="30px" height="30px"></a></span>
+                <span><a href="https://www.instagram.com/"><img src="img/instar.png" width="30px" height="30px"></a></span>
+                <span><a href="https://twitter.com/"><img src="img/twitter.png" width="30px" height="30px"></a></span>
+                <span><a href="https://www.youtube.com/"><img src="img/youtube2.png" width="30px" height="30px"></a></span>
+            </section>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
